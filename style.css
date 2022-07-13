@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 40%);
+    grid-template-rows: 30% 35% 35%;
+    background-color: rgb(228, 228, 228);
+    height: 100vh;
+}
+
+.top-right {
+    grid-column: 2;
+    grid-row: 1;
+    width: 50vw;
+    font-size: 25px;
+}
+
+.top-right p {
+    margin-left: 20px;
+}
+
+.form {
+    background-color: rgb(255, 255, 255);
+    width: 100vw;
+    box-shadow: 1px 2px 5px black;
+    grid-column: 2;
+    grid-row:2;
+}
+
+.form p {
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+input, label {
+    display: block;
+    margin-left: 20px;
+    margin-right: 50px;
+}
+
+
+input {
+    width: 200px;
+    border:2px solid black;
+}
+
+input:invalid {
+    border-color:red;
+}
+
+
+.create {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.create button {
+    background-color: skyblue;
+    padding: .5rem 2rem;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.create button:hover {
+    
+    box-shadow: 0 0 7px #FF0000;
+}
+
+.create p {
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.create a {
+    color: skyblue;
+    text-decoration: none;
+}
+
+.hero-banner {
+    background-image: url(img/marios-gkortsilas-unsplash.jpg);
+    height: 100vh;
+    width: 40vw;
+    background-size: cover;
+    position: relative;
+    
+}
+
+.hero h1 {
+  
+    font-family: 'Oswald', sans-serif;
+    font-size: 3rem;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 90px;
+    width: 100%;
+}
+
+.hero .photo {
+    background-color:  rgba(0,0,0,0.5);
+    color:white;
+    font-size: 1em;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
